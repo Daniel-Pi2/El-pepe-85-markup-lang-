@@ -1,0 +1,138 @@
+<html>
+<head>
+    <meta charset="UTF-8"> <!-- It is highly recommended to have this for special accents and symbols -->
+    <style>
+        body{
+            background-color: beige;
+        }
+        h1{
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+            font-size: 50pt;
+        }
+        h2{
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+            font-size: 40pt;
+        }
+        h3{
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+            font-size: 35pt;
+        }
+        h4{
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+            font-size: 30pt;
+        }
+        h5{
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+            font-size: 25pt;
+        }
+        h6{
+            font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+            font-variant: small-caps;
+            font-size: 25pt;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        pre {
+            font-family: "Courier New", "Rockwell";
+        }
+        code {
+            font-family: "Courier New";
+        }
+        /* Native paragraph classes and ID's */
+        .center {
+            text-align: center;
+        }
+        .left {
+            text-align: left;
+        }
+        .right {
+            text-align: right;
+        }
+        .justify {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+<h1 id="heading">  Title 1  
+</h1><h2 id="heading">  Title 2  
+</h2><h3 id="heading">  Title 3  
+</h3><h4 id="heading">  Title 4  
+</h4><h5 id="heading">  Title 5  
+</h5><h6 id="heading">  Title 6  
+</h6><pre class="python numberLines " startFrom="100
+"><code>[100]import matplotlib.pyplot as plt
+[101]
+[102]plt.plot
+</code></pre>
+<pre>   <!-- My newest addition, the multilined block!!! -->
+<!--1-->       La Sociedad Matemática del Crédito Instruccional
+<!--2-->           Ha solicitado el encargo de inventarles el mejor lenguaje
+<!--3-->               Para leer y escribir sus artículos con soltura y aplomo.
+<!--4-->
+<!--5-->       La palabra más inesperada
+<!--6-->           para desribir la acción más natural del hombre
+<!--7-->               
+<!--8-->               Errar es del hombre
+<!--9-->
+<!--10-->           Comunicar, es del artista.
+<!--11-->
+</pre>
+<p> párrafo de romper
+ </p><pre class="python numberLines " startFrom="56  
+"><code>[56]
+[57]def interpreter(line:str)->str:
+[58]
+[59]    global is_body
+[60]
+[61]    print(line)
+[62]
+[63]    if len(line) >= 2:
+[64]
+[65]        if "::body" in line:
+[66]            is_body = True
+[67]            line = line.replace("::body","<body>")
+[68]        elif "body::" in line:
+[69]            is_body = False
+[70]            line = line.replace("body::", "</body>")
+[71]        else:
+[72]
+[73]            if is_body:
+[74]                line = formatting(line)
+[75]            else:
+[76]                line = line
+[77]
+[78]        return line
+[79]
+[80]    else:
+[81]        return ""
+[82]
+</code></pre>
+<p> LaTeX code with simple blanklines in them (only enter tabs in them).
+ </p><p> <!-- See it will remove blanklines all the time, unless you write something on them -->
+ </p><pre class="LaTeX numberLines " startFrom="13
+"><code>[13] 
+[14] \begin{matrix}
+[15] 
+[16]     1 & 2 & 3\\
+[17]     4 & 5 & 6
+[18] 
+[19] \end{matrix}
+[20] 
+</code></pre>
+<p> LaTeX code with "tabs" replacing blanklines:
+ </p><pre class="LaTeX numberLines " startFrom="13
+"><code>[13] 
+[14] \begin{matrix}
+[15]      
+[16]     1 & 2 & 3\\
+[17]     4 & 5 & 6
+[18]      
+[19] \end{matrix}
+[20] 
+</code></pre>          <p> Nikola tesla </p>
+<p> Now i cured my language from its OCD, everything inside a block, behaves like a block and it stops
+ </p><p> formatting like plain text.
+ </p></body>
+</html>
